@@ -42,5 +42,20 @@ namespace Veterinario
                 MessageBox.Show("EL USUARIO O LA CONTRASEÑA SON INCORRECTOS");
             }
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            string text = Contraseña.Text;
+            if(checkBox1.Checked)
+            {
+                Contraseña.UseSystemPasswordChar = false;
+                Contraseña.Text = text;
+            }
+            else
+            {
+                Contraseña.UseSystemPasswordChar = true;
+                Contraseña.Text = text;
+            }
+        }
     }
 }

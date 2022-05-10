@@ -47,8 +47,8 @@ namespace Veterinario
             this.Contraseña.Name = "Contraseña";
             this.Contraseña.Size = new System.Drawing.Size(171, 22);
             this.Contraseña.TabIndex = 17;
-            this.Contraseña.Text = "Ingrese su contraseña";
             this.Contraseña.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Contraseña.UseSystemPasswordChar = true;
             this.Contraseña.TextChanged += new System.EventHandler(this.Contraseña_TextChanged);
             // 
             // Usuario
@@ -74,6 +74,7 @@ namespace Veterinario
             this.checkBox1.TabIndex = 15;
             this.checkBox1.Text = "Mostrar";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // button3
             // 
