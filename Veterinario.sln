@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veterinario", "Veterinario.csproj", "{29186CDB-2389-4D66-8C34-50CAD1DD1765}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29186CDB-2389-4D66-8C34-50CAD1DD1765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29186CDB-2389-4D66-8C34-50CAD1DD1765}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29186CDB-2389-4D66-8C34-50CAD1DD1765}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29186CDB-2389-4D66-8C34-50CAD1DD1765}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B7E7AC1-8A9E-4C28-BA5E-08493C7B11CC}
+	EndGlobalSection
+EndGlobal
