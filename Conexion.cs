@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -102,6 +103,44 @@ namespace Veterinario
             catch (MySqlException e)
             {
                 return "error";
+            }
+        }
+
+        public DataTable getMascotas(String id_mascota)
+        {
+            try
+            {
+                conexion.Open();
+                MySqlCommand consulta = new MySqlCommand("SELECT * FROM mascota WHERE id_mascota='"+ id_mascota+"'", conexion);
+                MySqlDataReader resultado = consulta.ExecuteReader();
+                DataTable veterinario = new DataTable();
+                veterinario.Load(resultado);
+                conexion.Close();
+                return veterinario;
+            }
+            catch (MySqlException e)
+            {
+                conexion.Close();
+                throw e;
+            }
+        }
+
+        public DataTable getClientes(String id_cliente)
+        {
+            try
+            {
+                conexion.Open();
+                MySqlCommand consulta = new MySqlCommand("SELECT * FROM cliente WHERE id_cliente ='" + id_cliente + "'", conexion);
+                MySqlDataReader resultado = consulta.ExecuteReader();
+                DataTable veterinario = new DataTable();
+                veterinario.Load(resultado);
+                conexion.Close();
+                return veterinario;
+            }
+            catch (MySqlException e)
+            {
+                conexion.Close();
+                throw e;
             }
         }
 

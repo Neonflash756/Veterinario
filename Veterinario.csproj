@@ -90,6 +90,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
+    <Compile Include="Registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro.Designer.cs">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </Compile>
     <Compile Include="VentanaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     <Compile Include="VentanaLogin.Designer.cs">
       <DependentUpon>VentanaLogin.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Registro.resx">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VentanaPrincipal.resx">
       <DependentUpon>VentanaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +124,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="VentanaLogin.resx">
       <DependentUpon>VentanaLogin.cs</DependentUpon>
@@ -132,6 +142,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HGSS_2_%28Alma%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_63318379-stock-photo-mix-of-office-supplies-and.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6c37253d157bfab8671b8c10c64149ae.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f0c152c10c50ba30108f76d6de133615.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_fondo_home1000x2000.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e2594f948f3914571767fc98640d2a2e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wooden_pier_golden_sunset-Nature_HD_Wallpaper_1366x768.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

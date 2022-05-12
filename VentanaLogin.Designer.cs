@@ -33,10 +33,12 @@ namespace Veterinario
             this.Contraseña = new System.Windows.Forms.TextBox();
             this.Usuario = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.boton_Entrar = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Contraseña
@@ -76,18 +78,6 @@ namespace Veterinario
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(12, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(83, 90);
-            this.button3.TabIndex = 14;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Turquoise;
@@ -100,17 +90,7 @@ namespace Veterinario
             this.button2.TabIndex = 13;
             this.button2.Text = "REGISTRARME";
             this.button2.UseVisualStyleBackColor = false;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(130, 294);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(174, 27);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "¿Olvidó su contraseña?";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // boton_Entrar
             // 
@@ -125,12 +105,59 @@ namespace Veterinario
             this.boton_Entrar.UseVisualStyleBackColor = false;
             this.boton_Entrar.Click += new System.EventHandler(this.boton_Entrar_Click);
             // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(12, 12);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(83, 90);
+            this.button3.TabIndex = 14;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Location = new System.Drawing.Point(130, 294);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(174, 27);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "¿Olvidó su contraseña?";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(211, 51);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(28, 14);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "DNI";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(192, 124);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(71, 14);
+            this.label2.TabIndex = 35;
+            this.label2.Text = "Contraseña";
+            // 
             // VentanaLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(338, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Contraseña);
             this.Controls.Add(this.Usuario);
             this.Controls.Add(this.checkBox1);
@@ -152,7 +179,9 @@ namespace Veterinario
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button boton_Entrar;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

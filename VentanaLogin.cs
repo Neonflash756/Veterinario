@@ -57,5 +57,12 @@ namespace Veterinario
                 Contraseña.Text = text;
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Registro r = new Registro();
+            r.Show();
+            this.Hide();
+        }
     }
 }
