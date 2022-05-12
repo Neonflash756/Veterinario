@@ -161,6 +161,7 @@ namespace Veterinario
             this.Controls.Add(this.Usuario);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Registro";
             this.Text = "Registro";
             this.ResumeLayout(false);
